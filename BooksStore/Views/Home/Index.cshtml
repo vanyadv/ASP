@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "MainPage";
+}
+<div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Price</th>
+        </tr>
+        @foreach(var item in ViewBag.Books)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Author</td>
+                <td>@item.Price</td>
+            </tr>
+        }
+    </table>
+</div>
